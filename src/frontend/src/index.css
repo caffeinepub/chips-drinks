@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Chips & Drinks palette */
+    --background: 0.93 0.025 10; /* soft pink #F8D7DF */
+    --foreground: 0.145 0 0; /* near-black #111 */
+    --card: 1 0 0; /* white */
+    --card-foreground: 0.145 0 0;
+    --popover: 1 0 0;
+    --popover-foreground: 0.145 0 0;
+    --primary: 0.53 0.16 25; /* coral #D65245 */
+    --primary-foreground: 1 0 0;
+    --secondary: 0.97 0.01 10; /* light pink tint */
+    --secondary-foreground: 0.145 0 0;
+    --muted: 0.92 0.02 10;
+    --muted-foreground: 0.42 0 0; /* gray #555 */
+    --accent: 0.56 0.1 185; /* teal #178F8B */
+    --accent-foreground: 1 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.88 0.02 10;
+    --input: 0.88 0.02 10;
+    --ring: 0.56 0.1 185;
+
+    /* Footer / hero */
+    --footer: 0.45 0.12 25; /* brick-red #A7463A */
+    --footer-foreground: 1 0 0;
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.205 0 0;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.708 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
